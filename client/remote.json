@@ -1,0 +1,9 @@
+{
+  "server_url": "http://127.0.0.1:8080",
+  "device_token": "",
+  "device_uid": "",
+  "device_name": "",
+  "auto_start": true,
+  "auto_connect": true,
+  "ui_port": 17989
+}

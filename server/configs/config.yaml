@@ -1,0 +1,22 @@
+server:
+  addr: ":8080"
+  mode: debug
+
+db:
+  # driver: sqlite | mysql
+  driver: sqlite
+  dsn: "remoto.db"
+  # mysql example:
+  # driver: mysql
+  # dsn: "remoto:remoto@tcp(127.0.0.1:3306)/remoto?charset=utf8mb4&parseTime=True&loc=Local"
+
+jwt:
+  secret: "change-me-in-production-remoto-secret"
+  access_ttl_minutes: 120
+  refresh_ttl_hours: 168
+
+seed:
+  admin_username: admin
+  admin_password: admin123
+  demo_username: demo
+  demo_password: demo123

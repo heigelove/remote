@@ -1,0 +1,15 @@
+*.exe
+*.db
+*.db-journal
+node_modules/
+dist/
+!agent/frontend/dist/
+!agent/frontend/dist/**
+bin/
+agent/build/bin/
+agent.json
+server/remoto.db
+.idea/
+.vscode/
+logs/
+*.log

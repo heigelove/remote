@@ -1,0 +1,67 @@
+.agent-panel {
+  width: 100%;
+  max-width: none;
+}
+.agent-card {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.05rem 1.15rem;
+  margin-bottom: 0.9rem;
+}
+.agent-card label {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0.7rem 0 0.3rem;
+}
+.agent-status { display: flex; align-items: center; gap: 0.5rem; }
+.agent-dot {
+  width: 9px; height: 9px; border-radius: 50%; background: #6b7280;
+}
+.agent-dot.on { background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+.agent-dot.stream { background: #60a5fa; box-shadow: 0 0 8px #60a5fa; }
+.agent-dot.err { background: var(--danger); }
+.agent-meta {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin-top: 0.55rem;
+  font-family: var(--mono);
+  white-space: pre-wrap;
+}
+.agent-row { display: flex; gap: 0.55rem; flex-wrap: wrap; margin-top: 1rem; }
+.agent-check {
+  display: flex !important;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted) !important;
+  font-size: 0.9rem !important;
+}
+.agent-check input { width: auto; }
+.agent-log-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.agent-log {
+  margin: 0.6rem 0 0;
+  max-height: 180px;
+  overflow: auto;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #0b0d11;
+  color: #c4cbd8;
+  font-size: 0.75rem;
+  font-family: var(--mono);
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+.agent-log-full {
+  max-height: calc(100vh - 220px);
+  min-height: 280px;
+}

@@ -1,0 +1,46 @@
+.login-page {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+}
+.login-atmosphere {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(45, 212, 191, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(45, 212, 191, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+  pointer-events: none;
+}
+.login-card {
+  position: relative;
+  width: min(400px, 100%);
+  padding: 2.25rem;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: rgba(22, 26, 34, 0.92);
+  backdrop-filter: blur(10px);
+}
+.brand {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  color: var(--accent);
+}
+.tagline {
+  margin: 0.4rem 0 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+.field { display: block; margin-top: 0.9rem; }
+.field span {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
